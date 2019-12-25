@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+
+  dev:
+    image: golang:1.13
+    tty: true
+    stdin_open: true
+    working_dir: /go/src/github.com/kushmansingh/CloudCache
+    volumes:
+      - ./:/go/src/github.com/kushmansingh/CloudCache
